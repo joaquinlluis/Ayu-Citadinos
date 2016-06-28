@@ -1,9 +1,9 @@
 <HTML lang="es">
   <HEAD>
 <TITLE>Bienvenido a Citadinos</TITLE>
-<STYLE>
-      body { 
-        color: #000; 
+    <STYLE>
+      body {
+        color: #000;
       }
       #principal, p, td, form {
         color: #000000;
@@ -44,7 +44,7 @@
           }
         }
       }
-    </SCRIPT> 
+    </SCRIPT>
     <NOSCRIPT><B><FONT COLOR=RED>Esta página usa scripts!!!</FONT></B></NOSCRIPT>
 
   </HEAD>
@@ -60,6 +60,8 @@
       <TR>
         <TD WIDTH=10px BACKGROUND=./img/border_left.gif><IMG SRC=./img/border_left.gif WIDTH=10px></TD>
         <TD WIDTH=780px ALIGN=CENTER>
+
+    <!-- HEADER CONTENT -->
     <TABLE WIDTH=780px HEIGHT=144px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
       <TR HEIGHT=86px>
         <TD WIDTH=443px BACKGROUND=./img/top_logo_next.gif VALIGN=MIDDLE><DIV><A HREF=index.html><IMG BORDER=0 SRC=./img/top_logo.gif WIDTH=443px HEIGHT=86px ALT="Punto rojo con una letra 'C' en blanco que simboliza una luna creciente tanto como un sol. El logo es seguido por un cartel negro que dice 'Citadinos' es decir el nombre de este portal en línea. Finalmente el lema del portal, 'tu acceso a la ciudad', aparece en caligrafía turquesa con una ligera inclinación sobre el cartel superior."></A></DIV></TD>
@@ -95,7 +97,7 @@
           <TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
             <TR HEIGHT=25px>
               <TD BGCOLOR="#EDEDED" WIDTH=380px><FONT COLOR=BLACK FACE=Verdana SIZE=2>&nbsp;&nbsp;<B>Tránsito:</B> Obras en la Avenida Central</FONT></TD>
-              <TD BGCOLOR="#FFFFFF" ALIGN=RIGHT ID="WEATHER"><FONT COLOR=BLACK FACE=Verdana SIZE=2><B>Hoy:</B> 
+              <TD BGCOLOR="#FFFFFF" ALIGN=RIGHT ID="WEATHER"><FONT COLOR=BLACK FACE=Verdana SIZE=2><B>Hoy:</B>
                 <SCRIPT LANGUAGE="JavaScript">
                   var now = new Date();
                   var days = new Array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
@@ -119,92 +121,147 @@
         <TD COLSPAN=5>&nbsp;</TD>
       </TR>
     </TABLE>
+    <!-- HEADER CONTENT -->
+
+    <!-- BODY CONTENT -->
     <TABLE WIDTH=780px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=WHITE>
       <TR WIDTH=780px>
+
+        <!-- MENU CONTENT -->
         <TD WIDTH=155px BGCOLOR=#E4E4E4 VALIGN=TOP>
           <TABLE WIDTH=155px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
+
             <TR HEIGHT=1px>
-              <TD WIDTH=155px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
-              <TD WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=9 VALIGN=TOP><IMG SRC=./img/marker2_t.gif WIDTH=1 HEIGHT=30px></TD>
+              <TD WIDTH=155px BACKGROUND=./img/marker2_w.gif>
+                <IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px alt="">
+              </TD>
+              <TD WIDTH=1px BACKGROUND=./img/marker2_t.gif ROWSPAN=9 VALIGN=TOP>
+                <IMG SRC=./img/marker2_t.gif WIDTH=1 HEIGHT=30px alt="">
+              </TD>
             </TR>
+
             <TR HEIGHT=34px>
-              <TD WIDTH=154px bgcolor="#EDEDED" id="home" onMouseOver="switchImage('nav_home', './img/nav_home2.gif'); ChangeColor('home','#FFF')" onMouseOut="switchImage('nav_home', './img/nav_home.gif'); ChangeColor('home','#EDEDED')"><A HREF="javascript:location.href='index.html';" style="outline: none;"><img name="nav_home" src=./img/nav_home.gif width=91 height=27 hspace="15" border=0px></a></TD>
+              <TD WIDTH=154px bgcolor="#EDEDED" id="home" onMouseOver="switchImage('nav_home', './img/nav_home2.gif'); ChangeColor('home','#FFF')" onMouseOut="switchImage('nav_home', './img/nav_home.gif'); ChangeColor('home','#EDEDED')">
+                <A HREF="javascript:location.href='index.html';" style="outline: none;">
+                  <img name="nav_home" src=./img/nav_home.gif width=91 height=27 hspace="15" border=0px alt="Inicio">
+                </a>
+              </TD>
             </TR>
+
             <TR HEIGHT=1px>
-              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif>
+                <IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px alt="">
+              </TD>
             </TR>
+
             <TR HEIGHT=34px>
-              <TD WIDTH=154px bgcolor="#EDEDED" id="news" onMouseOver="switchImage('nav_news', './img/nav_news2.gif'); ChangeColor('news','#FFF')" onMouseOut="switchImage('nav_news', './img/nav_news.gif'); ChangeColor('news','#EDEDED')"><A HREF="javascript:location.href='noticias.html';" style="outline: none;"><IMG SRC=./img/nav_news.gif name="nav_news" WIDTH=111 HEIGHT=21 hspace="12" BORDER=0px></A></TD>
+              <TD WIDTH=154px bgcolor="#EDEDED" id="news" onMouseOver="switchImage('nav_news', './img/nav_news2.gif'); ChangeColor('news','#FFF')" onMouseOut="switchImage('nav_news', './img/nav_news.gif'); ChangeColor('news','#EDEDED')">
+                <A HREF="javascript:location.href='noticias.html';" style="outline: none;">
+                  <IMG SRC=./img/nav_news.gif name="nav_news" WIDTH=111 HEIGHT=21 hspace="12" BORDER=0px alt="Noticias">
+                </A>
+              </TD>
             </TR>
+
             <TR HEIGHT=1px>
-              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif>
+                <IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px alt="">
+              </TD>
             </TR>
+
             <TR HEIGHT=34px>
-              <TD WIDTH=154px bgcolor="#EDEDED" id="tickets" onMouseOver="switchImage('nav_facts', './img/nav_facts2.gif'); ChangeColor('tickets','#FFF')" onMouseOut="switchImage('nav_facts', './img/nav_facts.gif'); ChangeColor('tickets','#EDEDED')"><A HREF="javascript:location.href='entradas.html';" style="outline: none;"><IMG name="nav_facts" SRC=./img/nav_facts.gif WIDTH=116 HEIGHT=23 hspace="9" BORDER=0px></A></TD>
+              <TD WIDTH=154px bgcolor="#EDEDED" id="tickets" onMouseOver="switchImage('nav_facts', './img/nav_facts2.gif'); ChangeColor('tickets','#FFF')" onMouseOut="switchImage('nav_facts', './img/nav_facts.gif'); ChangeColor('tickets','#EDEDED')">
+                <A HREF="javascript:location.href='entradas.html';" style="outline: none;">
+                  <IMG name="nav_facts" SRC=./img/nav_facts.gif WIDTH=116 HEIGHT=23 hspace="9" BORDER=0px alt="Entradas">
+                </A>
+              </TD>
             </TR>
+
             <TR HEIGHT=1px>
-              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif>
+                <IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px alt="">
+              </TD>
             </TR>
+
             <TR HEIGHT=34px>
-              <TD WIDTH=154px bgcolor="#EDEDED" id="survey" onMouseOver="switchImage('nav_survey', './img/nav_survey2.gif'); ChangeColor('survey','#FFF')" onMouseOut="switchImage('nav_survey', './img/nav_survey.gif'); ChangeColor('survey','#EDEDED')"><A HREF="javascript:location.href='encuesta.html';" style="outline: none;"><IMG SRC=./img/nav_survey.gif name="nav_survey" WIDTH=122 HEIGHT=32 hspace="8" BORDER=0px></A></TD>
+              <TD WIDTH=154px bgcolor="#EDEDED" id="survey" onMouseOver="switchImage('nav_survey', './img/nav_survey2.gif'); ChangeColor('survey','#FFF')" onMouseOut="switchImage('nav_survey', './img/nav_survey.gif'); ChangeColor('survey','#EDEDED')">
+                <A HREF="javascript:location.href='encuesta.html';" style="outline: none;">
+                  <IMG SRC=./img/nav_survey.gif name="nav_survey" WIDTH=122 HEIGHT=32 hspace="8" BORDER=0px alt="Encuesta">
+                </A>
+              </TD>
             </TR>
+
             <TR HEIGHT=1px>
-              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif><IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px></TD>
+              <TD WIDTH=154px BACKGROUND=./img/marker2_w.gif>
+                <IMG SRC=./img/marker2_w.gif WIDTH=78px HEIGHT=1px alt="">
+              </TD>
             </TR>
+
           </TABLE>
         </TD>
+        <!-- MENU CONTENT -->
+
+        <!-- SPACE -->
         <TD WIDTH=20px><IMG SRC=./img/blank_5x5.gif WIDTH=20px HEIGHT=5px></TD>
+        <!-- SPACE -->
+
+        <!-- BODY CONTENT -->
         <TD WIDTH=625px HEIGHT="600px" VALIGN=TOP id="principal">
-		    <DIV>
+		    <div>
           <p class="titulo">Encuesta Citadinos</p>
           <p class="titulo"><font size="4">Encuesta de la Semana: más parques en la ciudad, ganamos o perdemos?</font></p>
           <p>Gracias por completar la encuesta!</p>
             <div style="clear:both;width:100%;padding:0px;margin:0px;">
-            <div id="data"style="float:left">
-              <p style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo><font size="3">Resultados de la encuesta anterior</font></p>
-              <b>Cuál es tu órgano favorito y cuál tu odiado?</b>
-              <table width="560px" border="1" style="float:left; border: 1px dashed silver;">
-                <tr bgcolor="#DBDBDB">
-                  <td rowspan="4" bgcolor="#ffffff" style="border-right: 1px dashed silver;"><p style="background:#DBDBDB;padding-top:3px;padding-bottom:2px;"><br></p>
-                  <p style="margin-bottom:0px;padding-top:3px; padding-bottom:5px" align="right"><strong>lo amo</strong></p>
-                  <p style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px" align="right"><strong>lo odio</strong></p></td>
-                  <td title="question" width=70><b>Pulmón</b></td>
-                  <td title="question" width=70><b>Páncreas</b></td>
-                  <td title="question" width=70><b>Bazo</b></td>
-                  <td title="question" width=70><b>Hígado</b></td>
-                  <td title="question" width=70><b>Piel</b></td>
-                  <td title="question" width=70><b>Cerebro</b></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>4</td>
-                  <td>10</td>
-                  <td>4</td>
-                  <td></td>
-                  <td>1</td>
-                </tr>
-                <tr>  
-                </tr>
-                <tr bgcolor="#DBDBDB">
-                  <td>5</td>
-                  <td>6</td>
-                  <td></td>
-                  <td>14</td>
-                  <td>1</td>
-                  <td></td>
-                </tr>
-              </table>
-                          </div>
+              <div id="data"style="float:left">
+                <p style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo><font size="3">Resultados de la encuesta anterior</font></p>
+                <b>Cuál es tu órgano favorito y cuál tu odiado?</b>
+                <table width="560px" border="1" style="float:left; border: 1px dashed silver;">
+                  <tr bgcolor="#DBDBDB">
+                    <td rowspan="4" bgcolor="#ffffff" style="border-right: 1px dashed silver;"><p style="background:#DBDBDB;padding-top:3px;padding-bottom:2px;"><br></p>
+                    <p style="margin-bottom:0px;padding-top:3px; padding-bottom:5px" align="right"><strong>lo amo</strong></p>
+                    <p style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px" align="right"><strong>lo odio</strong></p></td>
+                    <td title="question" width=70><b>Pulmón</b></td>
+                    <td title="question" width=70><b>Páncreas</b></td>
+                    <td title="question" width=70><b>Bazo</b></td>
+                    <td title="question" width=70><b>Hígado</b></td>
+                    <td title="question" width=70><b>Piel</b></td>
+                    <td title="question" width=70><b>Cerebro</b></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td></td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                  </tr>
+                  <tr bgcolor="#DBDBDB">
+                    <td>5</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>14</td>
+                    <td>1</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p>&nbsp;</p>
           </div>
-          <p>&nbsp;</p></DIV>
         </TD>
       </TR>
     </TABLE>
+    <!-- BODY CONTENT -->
+
+    <!-- FOOTER CONTENT -->
     <TABLE WIDTH=780px HEIGHT=17px BORDER=0px CELLSPACING=0px CELLPADDING=0px BGCOLOR=#EDEDED>
       <TR HEIGHT=17px>
         <TD ALIGN=RIGHT><FONT COLOR=BLACK FACE=Verdana SIZE=1><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Derechos reservados</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>&reg;</FONT></TD>
       </TR>
     </TABLE>
+    <!-- FOOTER CONTENT -->
+
         <TD WIDTH=10px BACKGROUND=./img/border_right.gif><IMG SRC=./img/border_right.gif WIDTH=10px></TD>
       </TR>
       <TR HEIGHT=10px>
@@ -214,6 +271,6 @@
       </TR>
     </TABLE>
     </TD></TR></TR></TABLE>
-    
+
   </body>
 </html>
