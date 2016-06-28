@@ -129,7 +129,7 @@
 
         <!-- MENU CONTENT -->
         <TD WIDTH=155px BGCOLOR=#E4E4E4 VALIGN=TOP>
-          <TABLE WIDTH=155px BORDER=0px CELLSPACING=0px CELLPADDING=0px>
+          <TABLE WIDTH=155px BORDER=0px CELLSPACING=0px CELLPADDING=0px datatable="0">
 
             <TR HEIGHT=1px>
               <TD WIDTH=155px BACKGROUND=./img/marker2_w.gif>
@@ -206,27 +206,45 @@
 
         <!-- BODY CONTENT -->
         <TD WIDTH=625px HEIGHT="600px" VALIGN=TOP id="principal">
-		    <div>
-          <p class="titulo">Encuesta Citadinos</p>
-          <p class="titulo"><font size="4">Encuesta de la Semana: más parques en la ciudad, ganamos o perdemos?</font></p>
-          <p>Gracias por completar la encuesta!</p>
+  		    <div>
+            <h2 class="titulo">Encuesta Citadinos</h2>
+            <h3 class="titulo">
+              <font size="4">Encuesta de la Semana: más parques en la ciudad, ganamos o perdemos?</font>
+            </h3>
+            <p>Gracias por completar la encuesta!</p>
             <div style="clear:both;width:100%;padding:0px;margin:0px;">
               <div id="data"style="float:left">
-                <p style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo><font size="3">Resultados de la encuesta anterior</font></p>
-                <b>Cuál es tu órgano favorito y cuál tu odiado?</b>
-                <table width="560px" border="1" style="float:left; border: 1px dashed silver;">
+                <h4 style="padding-bottom:0px; margin-bottom:0px; width:300px; height:40px; overflow: hidden;" class=titulo>
+                  <font size="3">Resultados de la encuesta anterior</font>
+                </h4>
+
+                <!-- TABLA DE RESULTADOS -->
+                <table width="560px" border="1" style="float:left; border: 1px dashed silver;" summary="Se muestran los diferentes votos otorgados a cada uno de los organos por cada fila según lo amo o lo odio">
+                <caption style="font-weight: bold; text-align: left;">Cuál es tu órgano favorito y cuál tu odiado?</caption>
+                <!-- REVISAR EL TEXTO -->
                   <tr bgcolor="#DBDBDB">
-                    <td rowspan="4" bgcolor="#ffffff" style="border-right: 1px dashed silver;"><p style="background:#DBDBDB;padding-top:3px;padding-bottom:2px;"><br></p>
-                    <p style="margin-bottom:0px;padding-top:3px; padding-bottom:5px" align="right"><strong>lo amo</strong></p>
-                    <p style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px" align="right"><strong>lo odio</strong></p></td>
-                    <td title="question" width=70><b>Pulmón</b></td>
-                    <td title="question" width=70><b>Páncreas</b></td>
-                    <td title="question" width=70><b>Bazo</b></td>
-                    <td title="question" width=70><b>Hígado</b></td>
-                    <td title="question" width=70><b>Piel</b></td>
-                    <td title="question" width=70><b>Cerebro</b></td>
+                    <td bgcolor="#ffffff" style="border-right: 1px dashed silver;">
+                      <!-- <p style="background:#DBDBDB;padding-top:3px;padding-bottom:2px;">
+                        <br>
+                      </p>
+                      <p style="margin-bottom:0px;padding-top:3px; padding-bottom:5px" align="right">
+                        <strong>lo amo</strong>
+                      </p>
+                      <p style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px" align="right">
+                        <strong>lo odio</strong>
+                      </p> -->
+                    </td>
+                    <th title="question" width=70 align="left"><b>Pulmón</b></th>
+                    <th title="question" width=70 align="left"><b>Páncreas</b></th>
+                    <th title="question" width=70 align="left"><b>Bazo</b></th>
+                    <th title="question" width=70 align="left"><b>Hígado</b></th>
+                    <th title="question" width=70 align="left"><b>Piel</b></th>
+                    <th title="question" width=70 align="left"><b>Cerebro</b></th>
                   </tr>
                   <tr>
+                    <th style="margin-bottom:0px;padding-top:3px; padding-bottom:5px">
+                      <strong>lo amo</strong>
+                    </th>
                     <td></td>
                     <td>4</td>
                     <td>10</td>
@@ -237,6 +255,9 @@
                   <tr>
                   </tr>
                   <tr bgcolor="#DBDBDB">
+                    <th style="margin-top:5px;background:#DBDBDB;padding-top:3px; padding-bottom:4px">
+                      <strong>lo odio</strong>
+                    </th>
                     <td>5</td>
                     <td>6</td>
                     <td></td>
@@ -245,6 +266,8 @@
                     <td></td>
                   </tr>
                 </table>
+                <!-- TABLA DE RESULTADOS -->
+
               </div>
             </div>
             <p>&nbsp;</p>
