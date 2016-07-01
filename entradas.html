@@ -13,8 +13,12 @@
         font-family: impact;
         text-decoration: none;
       }
-      .precios td {
+      .precios td, .precios th {
         font: 12px/12px "Times New Roman", Times, serif;
+        text-align: left
+      }
+      .precios caption {
+        margin: 10px 0 5px 0
       }
       #terminos {
         font-family: "Times New Roman", Times, serif;
@@ -212,16 +216,20 @@
 
               <td valign="top" align="center" width="300px">
               <div>
-                <b>fechas de los recitales</b>
-                <table width="250px" border="1" bordercolor="#C0C0C0" rules="rows" datatable="0">
-                  <tr bgcolor="#A9B8BF">
-                    <td><b><font color="41545D">Los Enfermeros</font></b></td>
-                    <td><b><font color="41545D">The Great Obelisk</font></b></td>
-                  </tr>
-                  <tr>
-                    <td>12/2/13</td>
-                    <td>24/3/13</td>
-                  </tr>
+                <table width="250px" border="1" bordercolor="#C0C0C0" rules="rows" summary="">
+                  <caption style="font-size: 15px"><b>fechas de los recitales</b></caption>
+                  <thead>
+                    <tr bgcolor="#A9B8BF">
+                      <th scope="col"><b><font color="41545D">Los Enfermeros</font></b></th>
+                      <th scope="col"><b><font color="41545D">The Great Obelisk</font></b></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12/2/13</td>
+                      <td>24/3/13</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
               </td>
@@ -234,7 +242,7 @@
                   </td>
                   <td valign="middle" align="left" width="120px" style="border:0px;margin:0px;padding:0px;">
                     <DIV>
-                      <img src="./img/telefon_lightgrey_bg.gif" alt="0800 MÚSICA" border="0" valign="absmiddle">
+                      <img src="./img/telefon_lightgrey_bg.gif" alt="0800 M-U-S-I-C-A" border="0" valign="absmiddle">
                     </div>
                   </td>
                 </table>
@@ -249,63 +257,96 @@
               </h2>
           </table>
           <DIV></DIV>
-          <table width="600px" cellspacing="0" class="precios">
-            <tr bgcolor="#A9B8BF">
-              <td><b><font color="41545D">ADULTOS</font></b></td>
-              <td><b><font color="41545D">PREF</font></b></td>
-              <td><b><font color="41545D">BUTA</font></b></td>
-              <td><b><font color="41545D">MESA</font></b></td>
-              <td><b><font color="41545D">PIE</font></b></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></td>
-              <td><font color="41545D">$459,90</font></td>
-              <td><font color="41545D">$339,90</font></td>
-              <td><font color="41545D">$200,90</font></td>
-              <td><font color="41545D">$111,00</font></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">The Great Obelisk - At the beach</font></b></td>
-              <td><font color="41545D">$500</font></td>
-              <td><font color="41545D">$400</font></td>
-              <td><font color="41545D">$300</font></td>
-              <td><font color="41545D">$100</font></td>
-            </tr>
-            <tr>
-              <td colspan="5" bgcolor="A9B8BF"><b><font color="41545D"><font face="verdana">Estudiantes y ancianos</font></font></b></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></td>
-              <td><font color="41545D">$359,90</font></td>
-              <td><font color="41545D">$239,90</font></td>
-              <td><font color="41545D">$100,90</font></td>
-              <td><font color="41545D">$50,00</font></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">The Great Obelisk - At the beach</font></b></td>
-              <td><font color="41545D">$450</font></td>
-              <td><font color="41545D">$350</font></td>
-              <td><font color="41545D">$200</font></td>
-              <td><font color="41545D">$50</font></td>
-            </tr>
-            <tr bgcolor="#A9B8BF">
-              <td colspan="5"><b><font color="41545D">Grupo (5 o más)</font></b></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></td>
-              <td><font color="41545D">$369,90</font></td>
-              <td><font color="41545D">$249,90</font></td>
-              <td><font color="41545D">$110,90</font></td>
-              <td><font color="41545D">$60,00</font></td>
-            </tr>
-            <tr>
-              <td><b><font color="41545D">The Great Obelisk - At the beach</font></b></td>
-              <td><font color="41545D">$460</font></td>
-              <td><font color="41545D">$360</font></td>
-              <td><font color="41545D">$210</font></td>
-              <td><font color="41545D">$60</font></td>
-            </tr>
+
+          <table width="600px" cellspacing="0" class="precios" summary="Tabla de datos que muestra los precios para adultos según el artista y la ubicación">
+            <caption style="text-align: left; font-weight: bold">Adultos</caption>
+            <thead>
+              <tr bgcolor="#A9B8BF">
+                <td></td>
+                <th scope="col"><b><font color="41545D">PREF</font></b></th>
+                <th scope="col"><b><font color="41545D">BUTA</font></b></th>
+                <th scope="col"><b><font color="41545D">MESA</font></b></th>
+                <th scope="col"><b><font color="41545D">PIE</font></b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></th>
+                <td><font color="41545D">$459,90</font></td>
+                <td><font color="41545D">$339,90</font></td>
+                <td><font color="41545D">$200,90</font></td>
+                <td><font color="41545D">$111,00</font></td>
+              </tr>
+              <tr>
+                <th scope="row"><b><font color="41545D">The Great Obelisk - At the beach</font></b></th>
+                <td><font color="41545D">$500</font></td>
+                <td><font color="41545D">$400</font></td>
+                <td><font color="41545D">$300</font></td>
+                <td><font color="41545D">$100</font></td>
+              </tr>
+            </tbody>
           </table>
+
+          <table width="600px" cellspacing="0" class="precios" summary="Tabla de datos que muestra los precios para estudiantes y ancianos según el artista y la ubicación">
+            <caption style="text-align: left; font-weight: bold">Estudiantes y ancianos</caption>
+            <thead>
+              <tr bgcolor="#A9B8BF">
+                <td></td>
+                <th scope="col"><b><font color="41545D">PREF</font></b></th>
+                <th scope="col"><b><font color="41545D">BUTA</font></b></th>
+                <th scope="col"><b><font color="41545D">MESA</font></b></th>
+                <th scope="col"><b><font color="41545D">PIE</font></b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></th>
+                <td><font color="41545D">$359,90</font></td>
+                <td><font color="41545D">$239,90</font></td>
+                <td><font color="41545D">$100,90</font></td>
+                <td><font color="41545D">$50,00</font></td>
+              </tr>
+              <tr>
+                <th scope="row"><b><font color="41545D">The Great Obelisk - At the beach</font></b></th>
+                <td><font color="41545D">$450</font></td>
+                <td><font color="41545D">$350</font></td>
+                <td><font color="41545D">$200</font></td>
+                <td><font color="41545D">$50</font></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table width="600px" cellspacing="0" class="precios" summary="Tabla de datos que muestra los precios para Grupo (5 o más) según el artista y la ubicación">
+            <caption style="text-align: left; font-weight: bold">Grupo (5 o más)</caption>
+            <thead>
+              <tr bgcolor="#A9B8BF">
+                <td></td>
+                <th scope="col"><b><font color="41545D">PREF</font></b></th>
+                <th scope="col"><b><font color="41545D">BUTA</font></b></th>
+                <th scope="col"><b><font color="41545D">MESA</font></b></th>
+                <th scope="col"><b><font color="41545D">PIE</font></b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><b><font color="41545D">Los Enfermeros - Mono, mono</font></b></th>
+                <td><font color="41545D">$369,90</font></td>
+                <td><font color="41545D">$249,90</font></td>
+                <td><font color="41545D">$110,90</font></td>
+                <td><font color="41545D">$60,00</font></td>
+              </tr>
+              <tr>
+                <th scope="row"><b><font color="41545D">The Great Obelisk - At the beach</font></b></th>
+                <td><font color="41545D">$460</font></td>
+                <td><font color="41545D">$360</font></td>
+                <td><font color="41545D">$210</font></td>
+                <td><font color="41545D">$60</font></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
           <table style="border:1px dashed silver;border-bottom:none;margin-top: 25px;" bgColor=#ededed width=600px>
             <tr>
               <td align="center">
@@ -315,7 +356,7 @@
                       <div>Compre entradas llamando a la línea de la M U S I C A ---- llame ya!:&nbsp;</div>
                     </td>
                     <td valign="middle" align="left" width="120px" style="border:0px;margin:0px;padding:0px;">
-                      <img src="./img/telefon_lightgrey_bg.gif" alt="0800 MÚSICA" border="0" valign="absmiddle">
+                      <img src="./img/telefon_lightgrey_bg.gif" alt="0800 M-U-S-I-C-A" border="0" valign="absmiddle">
                     </td>
                   </tr>
                 </table>
